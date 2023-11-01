@@ -26,9 +26,25 @@ public class StudentGrade {
 
         System.out.print("Eneter your GPA :");
         Scanner sc = new Scanner(System.in);
-        int gpa = sc.nextInt();
+        int score = sc.nextInt();
+
+        if (score >= 80 && score >= 100) {
+            System.out.println("Result GPA :" + score);
+            System.out.println("Grade : A");
+        } else if (score >= 70 && score <= 79) {
+            System.out.println("Result GPA :" + score);
+            System.out.println("Grade : B");
+        } else if (score >= 60 && score <= 69) {
+            System.out.println("Result GPA :" + score);
+            System.out.println("Grade : C");
+        } else if (score >= 50 && score <= 59) {
+            System.out.println("Result GPA :" + score);
+            System.out.println("Grade : D");
+        } else {
+            System.out.println("Result GPA :" + score);
+            System.out.println("Grade : F");
+        }
 
         sc.close();
-        System.out.println("Result GPA :" + gpa);
     }
 }
